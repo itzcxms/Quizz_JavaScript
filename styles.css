@@ -1,0 +1,13 @@
+p {
+    visibility: hidden;
+    width: 240px;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateX(-200px);
+}
+
+.show-response {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
