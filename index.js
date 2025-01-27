@@ -10,7 +10,8 @@ function avancementQuizz() {
     nbReponses+=1;
     console.log(nbReponses)
     if (nbReponses === 10) {
-        console.log("Quiz terminé")
+        document.querySelector("#score").innerHTML = `
+    <h3>Vous avez répondu correctement à ${bonnesReponses} questions sur 10</h3>`;
     }
 }
 
@@ -39,14 +40,14 @@ const rep_q2 = document.querySelector("#q2 > p");
 
 btnVrai_q2.addEventListener("click", () => {
     rep_q2.classList.add("show-response");
-    rep_q2.style.background = "red";
+    rep_q2.style.background = "green";
     avancementQuizz();
+    bonnesReponses += 1;
 })
 
 btnFaux_q2.addEventListener("click", () => {
     rep_q2.classList.add("show-response");
-    rep_q2.style.background = "green";
-    bonnesReponses += 1;
+    rep_q2.style.background = "red";
     avancementQuizz();
 })
 
@@ -75,14 +76,14 @@ const rep_q4 = document.querySelector("#q4 > p");
 
 btnVrai_q4.addEventListener("click", () => {
     rep_q4.classList.add("show-response");
-    rep_q4.style.background = "red";
+    rep_q4.style.background = "green";
+    bonnesReponses += 1;
     avancementQuizz();
 })
 
 btnFaux_q4.addEventListener("click", () => {
     rep_q4.classList.add("show-response");
-    rep_q4.style.background = "green";
-    bonnesReponses += 1;
+    rep_q4.style.background = "red";
     avancementQuizz();
 })
 
@@ -111,14 +112,14 @@ const rep_q6 = document.querySelector("#q6 > p");
 
 btnVrai_q6.addEventListener("click", () => {
     rep_q6.classList.add("show-response");
-    rep_q6.style.background = "red";
+    rep_q6.style.background = "green";
+    bonnesReponses += 1;
     avancementQuizz();
 })
 
 btnFaux_q6.addEventListener("click", () => {
     rep_q6.classList.add("show-response");
-    rep_q6.style.background = "green";
-    bonnesReponses += 1;
+    rep_q6.style.background = "red";
     avancementQuizz();
 })
 
@@ -129,14 +130,14 @@ const rep_q7 = document.querySelector("#q7 > p");
 
 btnVrai_q7.addEventListener("click", () => {
     rep_q7.classList.add("show-response");
-    rep_q7.style.background = "red";
+    rep_q7.style.background = "green";
+    bonnesReponses += 1;
     avancementQuizz();
 })
 
 btnFaux_q7.addEventListener("click", () => {
     rep_q7.classList.add("show-response");
-    rep_q7.style.background = "green";
-    bonnesReponses += 1;
+    rep_q7.style.background = "red";
     avancementQuizz();
 })
 
@@ -147,14 +148,14 @@ const rep_q8 = document.querySelector("#q8 > p");
 
 btnVrai_q8.addEventListener("click", () => {
     rep_q8.classList.add("show-response");
-    rep_q8.style.background = "red";
+    rep_q8.style.background = "green";
     avancementQuizz();
+    bonnesReponses += 1;
 })
 
 btnFaux_q8.addEventListener("click", () => {
     rep_q8.classList.add("show-response");
-    rep_q8.style.background = "green";
-    bonnesReponses += 1;
+    rep_q8.style.background = "red";
     avancementQuizz();
 })
 
